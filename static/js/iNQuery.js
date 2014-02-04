@@ -37,7 +37,7 @@ function projectClick(e)
     e.preventDefault();
     // In an event handler, $(this) refers to 
     // the object that triggered the event 
-    $(this).css("background-color", "#13F9CB");
+    $(this).css("background-color", "#73d3bc");
 
  var containingProject = $(this).closest(".project");
     var description = $(containingProject).find(".project-description");
