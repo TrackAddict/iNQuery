@@ -16,6 +16,11 @@ body {
      padding: 20px;
 }
 
+title {
+
+     text-align: right;
+}
+
 .jumbotron {
 	position: relative;
 	background: none;
