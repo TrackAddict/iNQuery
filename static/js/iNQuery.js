@@ -17,7 +17,7 @@
 
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
-	$("a.thumbnail").click(projectClick);
+	//$("a.thumbnail").click(projectClick);
 	$("#submitBtn").click(updateProject);
 
 
