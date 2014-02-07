@@ -49,3 +49,7 @@ h3 {
 {
      color: #1f6ddd;
 }
+
+form {
+    display: inline;
+}
