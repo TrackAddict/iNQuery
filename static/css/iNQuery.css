@@ -20,6 +20,10 @@ h3 {
      text-align: center;
 }
 
+h1 {
+     text-align: center;
+}
+
 .jumbotron {
 	position: relative;
 	background: none;
@@ -27,7 +31,7 @@ h3 {
 
 .jumbotron:after {
      content:"";
-     background: url("../images/flag.jpg");
+     background: url("../images/banner.jpg");
      opacity: 0.2;
      top: 0;
      left: 0;
