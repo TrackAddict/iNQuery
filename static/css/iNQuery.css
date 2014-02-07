@@ -27,7 +27,7 @@ h3 {
 
 .jumbotron:after {
      content:"";
-     background: url("../images/lorempixel.jumbotron.jpeg");
+     background: url("../images/flag.jpg");
      opacity: 0.2;
      top: 0;
      left: 0;
