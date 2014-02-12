@@ -19,17 +19,52 @@
 </head>
 
 <body>
+
+	<nav class="navbar navbar-default" role="navigation">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+
+	      </button>
+	      <a class="navbar-brand" href="index.html">inQuery</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="index.html">Home</a></li>
+	        <li class="active"><a href="#">Senators</a></li>
+	        <li><a href="senators.html">Governors</a></li>
+	        <li><a href="senators.html">Congressmen</a></li>
+	        <li><a href="about.html">About Us</a></li>
+		    <form class="navbar-form navbar-left" role="search">
+		      <div class="form-group">
+		        <input type="text" class="form-control" placeholder="Search">
+		      </div>
+		      <button type="submit" class="btn btn-default">Submit</button>
+		    </form>
+	      
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+
+
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
-			<h1>Comparison: Senators</h1>
-			<h3>Two current Senators &middot; Up to three central issues</h3>
+			<h2>Comparison: Senators</h2>
+			<h4>Two current Senators &middot; Up to three central issues</h4>
 			<!-- <button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button> -->
 		</div>
 
-
-		<h4>Compare:</h4>
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
@@ -96,7 +131,7 @@
 
 	<form id="projectForm" role="form">
 
-	<h2>Compare Senators</h2>
+	<h3 class="bigh3">Compare Senators:</h3>
     <div class="form-group">
       <label for="value">First Senator:</label>
       <input type="value" class="form-control" id="width" placeholder="Name">
@@ -107,7 +142,7 @@
       <input type="value" class="form-control" id="width" placeholder="Name">
     </div>
 
-    <h2>On These Issues</h2>
+    <h3 class="bigh3">On These Issues:</h3>
 	<div class="form-group">
       <label for="project">First Issue</label>
       <select class="form-control" id="project">
@@ -159,8 +194,8 @@
 
     <button id="submitBtn" type="button" class="btn btn-default">Submit</button>
   </form>
-
-  <button onclick = "window.location ='index.html';">Home</button>
+  <br><br>
+  <a href="index.html"><button type="button" class="btn btn-default">Home</button></a>
 
   <script src="https://code.jquery.com/jquery.js"></script>
 </body>
