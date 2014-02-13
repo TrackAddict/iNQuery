@@ -16,8 +16,13 @@ body {
      padding: 20px;
 }
 
-h3 {
+.inContainer {
      text-align: center;
+}
+
+.bigh3 {
+    text-align: left;
+    font-weight: bold;
 }
 
 h1 {
@@ -56,4 +61,9 @@ h1 {
 
 form {
     display: inline;
+}
+
+.project img {
+    width: 45%;
+    height: 45%;
 }
