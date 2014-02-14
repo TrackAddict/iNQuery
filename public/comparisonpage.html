@@ -2,12 +2,12 @@
 
 <html>
 <head>
-	<title>About</title>	
+	<title>Welcome to iNQUery</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="../css/bootstrap.min.css" rel="stylesheet">
-	<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="../css/iNQuery.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/iNQuery.css" rel="stylesheet">
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -19,7 +19,6 @@
 </head>
 
 <body>
-
 	<nav class="navbar navbar-default" role="navigation">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
@@ -39,7 +38,7 @@
 	        <li><a href="index.html">Home</a></li>
 	        <li><a href="senateselect.html">Senators</a></li>
 	        <li><a href="governorselect.html">Governors</a></li>
-	        <li><a href="help.html">User FAQ Guide</a><li>	        
+	        <li><a href="help.html">User FAQ Guide</a><li>
 		    <form class="navbar-form navbar-left" role="search">
 		      <div class="form-group">
 		        <input type="text" class="form-control" placeholder="Find Representative">
@@ -55,34 +54,73 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
-			<h2 class="inContainer">Your Information Processor</h2>
-			<h4 class="inContainer">Senate &middot; House of Representatives &middot; State Governors</h4>
+			<h2 class="inContainer">Comparison</h2>
+			<h4 class="inContainer">Comparison of your two chosen ___</h4>
 			<!-- <button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button> -->
 		</div>
 
 
-		<h4>About iNQuery</h4>
+		<h4 class="leftBold">Your Comparison:</h4>
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		<p>
-			iNQuery is a web-hosted application designed to serve as a quick and accurate reference for evaluationg political officials and candidates. iNQuery draws on official records, natural language processing (NLP), and multiple third party-evaluators to deliver data-driven and accessible representations of the the demonstrated policies and records of federal legislators and state governors. iNQuery also offers tools for immediately accessible comparisons between officials in the same branch of Congress.
-		</p>
 
+
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="project">
+					<a href="#" class="thumbnail">
+						<img src="../images/ryan.jpg" alt="first" class="img-responsive">
+						<h3>Person 1</h3>
+						<p>Issue 1</p>
+						<p>Issue 2 </p>
+						<p>Issue 3</p>
+
+					</a>	
+				</div>
+			</div>
+
+			<div class="col-xs-6">
+				<div class="project">
+					<a href="#" class="thumbnail">
+						<img src="../images/ryan.jpg" alt="second" class="img-responsive">
+						<h3>Person 2</h3>
+						<p>Issue 1</p>
+						<p>Issue 2 </p>
+						<p>Issue 3</p>
+					</a>	
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		<!--<div class="project" id="project3">
+			<a href="#" class="thumbnail">
+				<img src="images/house.reps.jpg" alt="Lorem Pixel image" class="img">
+				<p>Congressmen</p>
+			</a>
+		</div>
+
+		<div class="project" id="project4">
+			<a href="#" class="thumbnail">
+				<img src="images/map.us.jpg" alt="Lorem Pixel image" class="img">
+				<p>Find your representative</p>
+			</a>
+		</div> -->
 		<hr>
 		<ul class="pager">
 		<li class="previous"><a href="javascript:history.go(-1)">&larr; Back</a></li>
 		</ul>
-        <!-- <div class="span7 text-center">
+<!-- 		<div class="span7 text-center">
 			<a href="index.html"><button type="button" class="btn btn-default">Home</button></a>
 		</div> -->
 
-
 	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
-	<script src = "../js/iNQuery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src = "js/iNQuery.js"></script>
 
-
-  <script src="https://code.jquery.com/jquery.js"></script>
 </body>
 </html>
