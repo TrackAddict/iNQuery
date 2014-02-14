@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>Welcome to iNQUery</title>	
+	<title>Help</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
 	<nav class="navbar navbar-default" role="navigation">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
@@ -29,19 +30,19 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">iNQuery</a>
+	      <a class="navbar-brand" href="index.html">iNQuery</a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Home</a></li>
+	        <li><a href="index.html">Home</a></li>
 	        <li><a href="senateselect.html">Senators</a></li>
 	        <li><a href="governorselect.html">Governors</a></li>
-	        <li><a href="help.html">Help</a></li>
+	        <li class="active"><a href="#">Help</a></li>
 		    <form class="navbar-form navbar-left" role="search">
 		      <div class="form-group">
-		        <input type="text" class="form-control" placeholder="Find Representative">
+		        <input type="text" class="form-control" placeholder="Find Representatives">
 		      </div>
 		      <button type="submit" class="btn btn-default">Submit</button>
 		    </form>
@@ -54,56 +55,23 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
-			<h2 class="inContainer">Welcome to iNQuery</h2>
-			<h4 class="inContainer">Senate &middot; House of Representatives &middot; State Governors</h4>
+			<h2 class="inContainer">iNQuery Help</h2>
+			<h4 class="inContainer">Find your way around iNQuery</h4>
 			<!-- <button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button> -->
 		</div>
 
 
-		<h4 class="leftBold">Compare:</h4>
-		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-
-
-		<div class="row">
-			<div class="col-md-6">
-				<div class="project" id="project1">
-					<a href="senateselect.html" class="thumbnail">
-						<img src="../images/senate.logo.jpg" alt="Lorem Pixel image" class="img">
-						<button type="button" class="btn btn-default">Senators</button>
-					</a>
-				</div>
-			</div>
-
-			<div class="col-md-6">
-				<div class="project" id="project2">
-					<a href="governorselect.html" class="thumbnail">
-						<img src="../images/nga.logo.jpg" alt="Lorem Pixel image" class="img">
-						<button type="button" class="btn btn-default">Governors</button>
-					</a>
-				</div>
-			</div>
-		</div>
-
-		<!--<div class="project" id="project3">
-			<a href="#" class="thumbnail">
-				<img src="images/house.reps.jpg" alt="Lorem Pixel image" class="img">
-				<p>Congressmen</p>
-			</a>
-		</div>
-
-		<div class="project" id="project4">
-			<a href="#" class="thumbnail">
-				<img src="images/map.us.jpg" alt="Lorem Pixel image" class="img">
-				<p>Find your representative</p>
-			</a>
-		</div> -->
+		<h4>How to use iNQuery</h4>
+		<p>
+			When you navigate to iNQuery, you will see several options on the front page to help you refine your search. iNQuery currently offer records and evaluations of U.S. Federal Legislators and State Governors, with additional functionality allowing for direct comparison of legislators in the same house of Congress, along with access to NLP-driven summaries of each bill considered and how each legislator voted on those bills. iNQuery also provides access to voter and single-issue advocacy ratings for state governors.
+		</p>
 		<hr>
-		<div class="span7 text-right">
-		  <a class="btn btn-default btn-xs" href="about.html" role="button">About iNQuery</a>
-		</div>
-
+		<ul class="pager">
+		<li class="previous"><a href="javascript:history.go(-1)">&larr; Back</a></li>
+		</ul>
+        <!-- <div class="span7 text-center">
+			<a href="index.html"><button type="button" class="btn btn-default">Home</button></a>
+		</div> -->
 
 
 	<script src="https://code.jquery.com/jquery.js"></script>
@@ -111,8 +79,6 @@
 	<script src = "../js/iNQuery.js"></script>
 
 
-
-  <script src = "../app.js"></script>
   <script src="https://code.jquery.com/jquery.js"></script>
 </body>
 </html>

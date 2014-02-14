@@ -5,6 +5,36 @@
 	initializePage();
 }) */
 
+
+function calculateProportion(Senator1, Senator2)
+{
+
+
+  var agree = 0.0;
+  var total = 0.0;
+  var proportion = 0.0;
+  
+  for (i = 0, i < Senator1.length, i++)
+  {
+    for (ii = 0; ii < Senator2.length, ii++)
+    {
+      total = total + 1;
+      
+      if (Senator1[i] == Senator2[ii])
+        {agree = agree + 1; }
+
+    }
+
+  }
+
+  proportion = agree/total;
+
+  return proportion;
+  
+}
+
+
+
 /*
  * Function that is called when the document is ready.
  */
@@ -31,44 +61,26 @@ function updateProject(e) {
    $(projectID + " .project-description").text(newText);
 }
 
-function projectClick(e) 
-{
-    // prevent the page from reloading 
-    e.preventDefault();
-    // In an event handler, $(this) refers to 
-    // the object that triggered the event 
-    $(this).css("background-color", "#73d3bc");
+// function projectClick(e) 
+// {
+//     // prevent the page from reloading 
+//     e.preventDefault();
+//     // In an event handler, $(this) refers to 
+//     // the object that triggered the event 
+//     $(this).css("background-color", "#73d3bc");
 
- var containingProject = $(this).closest(".project");
-    var description = $(containingProject).find(".project-description");
+//  var containingProject = $(this).closest(".project");
+//     var description = $(containingProject).find(".project-description");
     
-    if (description.length == 0) 
-    {
+//     if (description.length == 0) 
+//     {
     	
-        $(containingProject).append("<div class='project-description'><p>Description of the project.</p></div>");
-    } 
+//         $(containingProject).append("<div class='project-description'><p>Description of the project.</p></div>");
+//     } 
 
-    else 
-    {
-       description.html("<p>Stop clicking on me! You just did it at " + (new Date()) + "</p>");
-    }
-}
+//     else 
+//     {
+//        description.html("<p>Stop clicking on me! You just did it at " + (new Date()) + "</p>");
+//     }
+// }
 
-function calculateProportion(Senator1, Senator2)
-{
-  var agree = 0.0;
-  var total = 0.0;
-  var proportion = 0.0;
-  for (i = 0, i < laws.length, i++)
-  {
-    if (Senator1.laws[i] == Senator2.laws[i])
-    {
-      total = total + 1;
-    }
-    total = total + 1;
-  }
-
-  proportion = agree/total;
-
-  return proportion;
-}
