@@ -7,5 +7,25 @@
 			"Feinstein": "Yea",
 			"fulltext": "http://thomas.loc.gov/cgi-bin/query/D?c113:4:./temp/~c113Ppbmgx::"
 		}
+
+		{
+			"name": "S1963",
+			"Description": "Repeal portions of earlier spending bill",
+			"Boxer": "Yea",
+			"Feinstein": "Yea",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/query/z?c113:S.1963:"
+		}
+
+		{
+			"name": "S1845",
+			"Description": "extend unemployment benefits",
+			"Boxer": "Yea",
+			"Feinstein": "Yea",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/query/z?c113:S.1845:"
+		}
+
+		
 	]
+
+
 }

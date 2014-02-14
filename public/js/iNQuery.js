@@ -52,5 +52,23 @@ function projectClick(e)
     {
        description.html("<p>Stop clicking on me! You just did it at " + (new Date()) + "</p>");
     }
+}
 
+function calculateProportion(Senator1, Senator2)
+{
+  var agree = 0.0;
+  var total = 0.0;
+  var proportion = 0.0;
+  for (i = 0, i < laws.length, i++)
+  {
+    if (Senator1.laws[i] == Senator2.laws[i])
+    {
+      total = total + 1;
+    }
+    total = total + 1;
+  }
+
+  proportion = agree/total;
+
+  return proportion;
 }
