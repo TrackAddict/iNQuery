@@ -2,13 +2,19 @@
 
 <html>
 <head>
-	<title>State Governor Comparison</title>	
+	<title>Results</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="css/iNQuery.css" rel="stylesheet">
-	<!-- this is a comment in HTML -->
+
+
+	<link href = "css/bootstrap.css" rel = "stylesheet">
+	<link href = "css/bootstrap-theme.css" rel = "stylesheet">
+	<link href = "css/iNQuery.css" rel = "stylesheet">
+
+	<script src = "js/jquery-1.11.0.js"></script>
+	<script src = "js/bootstrap.js"></script>
+	<script src = "js/hci-friends.js"></script>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,7 +24,6 @@
     <![endif]-->        
 </head>
 
-<body>
 
 	<nav class="navbar navbar-default" role="navigation">
 	  <div class="container-fluid">
@@ -37,10 +42,10 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li><a href="index.html">Home</a></li>
-	        <li><a href="senateselect.html">Senators</a></li>
-	        <li class="active"><a href="#">Governors</a></li>
-          <li><a href="help.html">User FAQ Guide</a><li>
+	        <li><a href="/">Home</a></li>
+	        <li class="active"><a href="senateSelect">Senators</a></li>
+	        <li><a href="governorSelect">Governors</a></li>
+	        <li><a href="about">User FAQ Guide</a><li>
 		    <form class="navbar-form navbar-left" role="search">
 		      <div class="form-group">
 		        <input type="text" class="form-control" placeholder="Find Representative">
@@ -58,21 +63,22 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
-			<h2 class="inContainer">Comparison: Governors</h2>
-			<h4 class="inContainer">Two current governors &middot; Up to three central issues</h4>
+			<h2 class="inContainer">Comparison: Senators</h2>
+			<h4 class="inContainer">Two current Senators &middot; Up to three central issues</h4>
 			<!-- <button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button> -->
 		</div>
 
-	<form id="projectForm" role="form">
+<body>
+		<form id="projectForm" role="form">
 
-	<h4 class="bigh3">Compare Governors:</h4>
+	<h4 class="bigh3">Compare Senators:</h4>
     <div class="form-group">
-      <label for="value">First Governor:</label>
+      <label for="value">First Senator:</label>
       <input type="value" class="form-control" id="width" placeholder="Name">
     </div>
 
     <div class="form-group">
-      <label for="value">Second Governor:</label>
+      <label for="value">Second Senator:</label>
       <input type="value" class="form-control" id="width" placeholder="Name">
     </div>
 
@@ -127,19 +133,16 @@
 
     <div class="span7 text-center">
     <a href="comparisonpage.html"><button id="submitBtn" type="button" class="btn btn-default">Submit</button></a>
-  </div>
+    </div>
   </form>
   <hr>
   <ul class="pager">
   <li class="previous"><a href="javascript:history.go(-1)">&larr; Back</a></li>
   </ul>
-  <!-- <div class="span7 text-left">
-  	<a href="index.html"><button type="button" class="btn btn-default btn-sm">
-  <span class="glyphicon glyphicon-arrow-left"></span> Back</button></a>
-  </div>  -->
 
   <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src = "js/iNQuery.js"></script>
+  <script src="public/js/bootstrap.min.js"></script>
+  <script src = "public/js/iNQuery.js"></script>
+	
 </body>
 </html>
