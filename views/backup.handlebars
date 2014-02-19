@@ -1,0 +1,148 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Results</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link href = "css/bootstrap.css" rel = "stylesheet">
+	<link href = "css/bootstrap-theme.css" rel = "stylesheet">
+	<link href = "css/iNQuery.css" rel = "stylesheet">
+
+	<script src = "js/jquery-1.11.0.js"></script>
+	<script src = "js/bootstrap.js"></script>
+	<script src = "js/hci-friends.js"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->        
+</head>
+
+
+	<nav class="navbar navbar-default" role="navigation">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+
+	      </button>
+	      <a class="navbar-brand" href="index.html">iNQuery</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="/">Home</a></li>
+	        <li class="active"><a href="senateSelect">Senators</a></li>
+	        <li><a href="governorSelect">Governors</a></li>
+	        <li><a href="about">User FAQ Guide</a><li>
+		    <form class="navbar-form navbar-left" role="search">
+		      <div class="form-group">
+		        <input type="text" class="form-control" placeholder="Find Representative">
+		      </div>
+		      <button type="submit" class="btn btn-default">Submit</button>
+		    </form>
+	      
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+
+
+	<div class="container">
+		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
+		<!-- p means paragraph -->
+		<div class="jumbotron">
+			<h2 class="inContainer">Comparison: Senators</h2>
+			<h4 class="inContainer">Two current Senators &middot; Up to three central issues</h4>
+			<!-- <button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button> -->
+		</div>
+
+<body>
+		<form id="projectForm" role="form">
+
+	<h4 class="bigh3">Compare Senators:</h4>
+    <div class="form-group">
+      <label for="value">First Senator:</label>
+      <input type="value" class="form-control" id="width" placeholder="Name">
+    </div>
+
+    <div class="form-group">
+      <label for="value">Second Senator:</label>
+      <input type="value" class="form-control" id="width" placeholder="Name">
+    </div>
+
+    <h4 class="bigh3">On These Issues:</h4>
+	<div class="form-group">
+      <label for="project">First Issue</label>
+      <select class="form-control" id="project">
+        <option value="#project1">Select Issue</option>
+        <option value="#project2">Federal Spending</option>
+        <option value="#project3">Education</option>
+        <option value="#project4">Foreign Policy</option>
+        <option value="#project5">Health Care</option>
+        <option value="#project6">Tax Policy</option>
+        <option value="#project7">Abortion</option>
+        <option value="#project8">Immigration</option>
+        <option value="#project9">Energy</option>
+        <option value="#project10">None</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="project">Second Issue</label>
+      <select class="form-control" id="project">
+      	<option value="#project1">Select Issue</option>
+        <option value="#project2">Federal Spending</option>
+        <option value="#project3">Education</option>
+        <option value="#project4">Foreign Policy</option>
+        <option value="#project5">Health Care</option>
+        <option value="#project6">Tax Policy</option>
+        <option value="#project7">Abortion</option>
+        <option value="#project8">Immigration</option>
+        <option value="#project9">Energy</option>
+        <option value="#project10">None</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="project">Third Issue</label>
+      <select class="form-control" id="project">
+        <option value="#project1">Select Issue</option>
+        <option value="#project2">Federal Spending</option>
+        <option value="#project3">Education</option>
+        <option value="#project4">Foreign Policy</option>
+        <option value="#project5">Health Care</option>
+        <option value="#project6">Tax Policy</option>
+        <option value="#project7">Abortion</option>
+        <option value="#project8">Immigration</option>
+        <option value="#project9">Energy</option>
+        <option value="#project10">None</option>
+      </select>
+    </div>
+
+    <div class="span7 text-center">
+    <a href="comparisonpage.html"><button id="submitBtn" type="button" class="btn btn-default">Submit</button></a>
+    </div>
+  </form>
+  <hr>
+  <ul class="pager">
+  <li class="previous"><a href="javascript:history.go(-1)">&larr; Back</a></li>
+  </ul>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="public/js/bootstrap.min.js"></script>
+  <script src = "public/js/iNQuery.js"></script>
+	
+</body>
+</html>

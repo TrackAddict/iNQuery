@@ -2,14 +2,14 @@
 	"buttons": [
 		{
 			"name": "Senators",
-			"url": "senateselect.handlebars",
+			"url": "senateSelect",
 			"imageURL": "http://www.conservapedia.com/images/thumb/4/40/US_senate_seal.png/200px-US_senate_seal.png",
 			"projectNumber": "1"
 		},
 
 		{
 			"name": "Governors",
-			"url": "public/pages/governorselect.handlebars",
+			"url": "governorSelect",
 			"imageURL": "http://achievethecore.org/content/upload/ngalogo3.jpg",
 			"projectNumber": "2"
 		}
