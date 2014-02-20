@@ -43,7 +43,7 @@
 	        <li class="active"><a href="#">Home</a></li>
 	        <li><a href="senateSelect">Senators</a></li>
 	        <li><a href="governorSelect">Governors</a></li>
-	        <li><a href="about.handlebars">About Us</a></li>
+	        <li><a href="about">About Us</a></li>
 		    <form class="navbar-form navbar-left" role="search">
 		      <div class="form-group">
 		        <input type="text" class="form-control" placeholder="Find Representative">
@@ -78,9 +78,9 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="project" id="project" + "{{projectNumber}}">
-					<a href="{{URL}}" class="thumbnail">
+					<a href="{{url}}" class="thumbnail">
 						<img src="{{imageURL}}">
-						<button type="button" class="btn btn-default">"{{name}}":</button>
+						<button type="button" class="btn btn-default">{{name}}:</button>
 					</a>
 				</div>
 			</div>

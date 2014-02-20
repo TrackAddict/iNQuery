@@ -5,7 +5,13 @@
 			"Description": "Raise debt ceiling",
 			"Boxer": "Yea",
 			"Feinstein": "Yea",
-			"fulltext": "http://thomas.loc.gov/cgi-bin/query/D?c113:4:./temp/~c113Ppbmgx::"
+			"Dean Heller": "Nay",
+			"Harry Reid": "Yea",
+			"Jeff Flake": "Nay",
+			"John McCain": "Nay",
+			"Jeff Merkley": "Yea",
+			"Ron Wyden": "Yea",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:SN00540:@@@L&summ2=m&"
 		},
 
 		{
@@ -13,7 +19,13 @@
 			"Description": "Repeal portions of earlier spending bill",
 			"Boxer": "Yea",
 			"Feinstein": "Yea",
-			"fulltext": "http://thomas.loc.gov/cgi-bin/query/z?c113:S.1963:"
+			"Dean Heller": "Yea",
+			"Harry Reid": "Yea",
+			"Jeff Flake": "Yea",
+			"John McCain": "Yea",
+			"Jeff Merkley": "Yea",
+			"Ron Wyden": "Yea",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:SN01963:@@@L&summ2=m&"
 		},
 
 		{
@@ -21,7 +33,13 @@
 			"Description": "extend unemployment benefits",
 			"Boxer": "Yea",
 			"Feinstein": "Yea",
-			"fulltext": "http://thomas.loc.gov/cgi-bin/query/z?c113:S.1845:"
+			"Dean Heller": "Yea",
+			"Harry Reid": "Nay",
+			"Jeff Flake": "Nay",
+			"John McCain": "Nay",
+			"Jeff Merkley": "Yea",
+			"Ron Wyden": "Yea",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:SN01845:@@@L&summ2=m&"
 		},
 
 		{
@@ -29,11 +47,100 @@
 			"Description": "Extends short-term spending bill",
 			"Boxer": "Yea",
 			"Feinstein": "Yea",
-			"fulltext": "http://thomas.loc.gov/cgi-bin/query/D?c113:1:./temp/~c113UhFy0e::"
+			"Dean Heller": "Nay",
+			"Harry Reid": "Yea",
+			"Jeff Flake": "Yea",
+			"John McCain": "Yea",
+			"Jeff Merkley": "Yea",
+			"Ron Wyden": "Yea",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:HJ00106:@@@L&summ2=m&"
+		},
+
+		{
+			"name": "HR2642",
+			"Description": "Agricultural Act of 2014",
+			"Boxer": "Yea",
+			"Feinstein": "Yea",
+			"Dean Heller": "Nay",
+			"Harry Reid": "Yea",
+			"Jeff Flake": "Nay",
+			"John McCain": "Nay",
+			"Jeff Merkley": "Yea",
+			"Ron Wyden": "Yea",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:HR02642:@@@L&summ2=m&"
 		}
+	],
 
+	"education": [
+		{
+			"name": "HR1911",
+			"Description": "setting federal school loan interest rates",
+			"Boxer": "Nay",
+			"Feinstein": "Yea",
+			"Dean Heller": "Yea",
+			"Harry Reid": "Yea",
+			"Jeff Flake": "Yea",
+			"John McCain": "Yea",
+			"Jeff Merkley": "Yea",
+			"Ron Wyden": "Yea",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:HR01911:@@@L&summ2=m&"
+		},
 
+		{
+			"name": "S.Con.Res. 8",
+			"Description": "allocating federal budget to low income children",
+			"Boxer": "Nay",
+			"Feinstein": "Nay",
+			"Dean Heller": "Yea",
+			"Harry Reid": "Nay",
+			"Jeff Flake": "Yea",
+			"John McCain": "Yea",
+			"Jeff Merkley": "Nay",
+			"Ron Wyden": "Nay",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:SC00008:@@@L&summ2=m&"
+		},
+
+		{
+			"name": "S1238",
+			"Description": "motion to proceed for consideration of act",
+			"Boxer": "Yea",
+			"Feinstein": "Yea",
+			"Dean Heller": "Nay",
+			"Harry Reid": "Yea",
+			"Jeff Flake": "Yea",
+			"John McCain": "Yea",
+			"Jeff Merkley": "Yea",
+			"Ron Wyden": "Yea",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:SN01238:@@@L&summ2=m&"
+		},
+
+		{
+			"name": "S953",
+			"Description": "extend reduce interest in stanford federal loans for reasons",
+			"Boxer": "Yea",
+			"Feinstein": "Yea",
+			"Dean Heller": "Nay",
+			"Harry Reid": "Yea",
+			"Jeff Flake": "Nay",
+			"John McCain": "Nay",
+			"Jeff Merkley": "Yea",
+			"Ron Wyden": "Yea",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:SN00953:@@@L&summ2=m&"
+		},
+		
+		{
+			"name": "S1003",
+			"Description": "setting rate of interest on direct loans",
+			"Boxer": "Nay",
+			"Feinstein": "Nay",
+			"Dean Heller": "Yea",
+			"Harry Reid": "Nay",
+			"Jeff Flake": "Yea",
+			"John McCain": "Yea",
+			"Jeff Merkley": "Nay",
+			"Ron Wyden": "Nay",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:SN01003:@@@L&summ2=m&"
+		}
 	]
-
 
 }
