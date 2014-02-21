@@ -14,6 +14,7 @@ var expressGovernors = require('./routes/governorSelect');
 var expressResults = require('./routes/results');
 var expressAbout = require('./routes/about');
 var expressGallery = require('./routes/gallery');
+var expressHelp = require('./routes/help');
 // Example route
 // var user = require('./routes/user');
 
@@ -48,6 +49,7 @@ app.get('/governorSelect', expressGovernors.viewGovernors);
 app.get('/results', expressResults.viewResults);
 app.get('/about', expressAbout.viewAbout);
 app.get('/gallery', expressGallery.viewGallery);
+app.get('/help', expressHelp.viewHelp);
 // Example route
 // app.get('/users', user.list);
 
