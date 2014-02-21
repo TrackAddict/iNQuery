@@ -8,8 +8,8 @@
 		},
 
 		{
-			"name": "Governors",
-			"url": "governorSelect",
+			"name": "See All Senators",
+			"url": "gallery",
 			"imageURL": "http://achievethecore.org/content/upload/ngalogo3.jpg",
 			"projectNumber": "2"
 		}

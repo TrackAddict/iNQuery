@@ -55,7 +55,7 @@
 			"Ron Wyden": "Yea",
 			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:HJ00106:@@@L&summ2=m&"
 		},
-
+		
 		{
 			"name": "HR2642",
 			"Description": "Agricultural Act of 2014",
@@ -127,7 +127,7 @@
 			"Ron Wyden": "Yea",
 			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:SN00953:@@@L&summ2=m&"
 		},
-		
+
 		{
 			"name": "S1003",
 			"Description": "setting rate of interest on direct loans",
@@ -141,6 +141,77 @@
 			"Ron Wyden": "Nay",
 			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:SN01003:@@@L&summ2=m&"
 		}
-	]
+	],
 
+	"taxation": [
+		{
+			"name": "S743",
+			"Description": "distrubution and use of taxes",
+			"Boxer": "Yea",
+			"Feinstein": "Yea",
+			"Dean Heller": "Nay",
+			"Harry Reid": "Yea",
+			"Jeff Flake": "Nay",
+			"John McCain": "Nay",
+			"Jeff Merkley": "Nay",
+			"Ron Wyden": "Nay",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:SN00743:@@@L&summ2=m&"
+		},
+
+		{
+			"name": "S388",
+			"Description": "elimnation of tax loopholes",
+			"Boxer": "Yea",
+			"Feinstein": "Yea",
+			"Dean Heller": "Nay",
+			"Harry Reid": "Nay",
+			"Jeff Flake": "Nay",
+			"John McCain": "Nay",
+			"Jeff Merkley": "Yea",
+			"Ron Wyden": "Yea",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:SN00388:@@@L&summ2=m&"
+		},
+
+		{
+			"name": "S.Con.Res. 8",
+			"Description": "motion to repeal tax increase as a result of obamacare",
+			"Boxer": "Nay",
+			"Feinstein": "Nay",
+			"Dean Heller": "Yea",
+			"Harry Reid": "Nay",
+			"Jeff Flake": "Yea",
+			"John McCain": "Yea",
+			"Jeff Merkley": "Nay",
+			"Ron Wyden": "Nay",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:SC00008:@@@L&summ2=m&"
+		},
+
+		{
+			"name": "HR8",
+			"Description": "income tax adjustment",
+			"Boxer": "Yea",
+			"Feinstein": "Yea",
+			"Dean Heller": "Yea",
+			"Harry Reid": "Yea",
+			"Jeff Flake": "n/a",
+			"John McCain": "Yea",
+			"Jeff Merkley": "Yea",
+			"Ron Wyden": "Yea",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d112:HR00008:@@@L&summ2=m&"
+		},
+
+		{
+			"name": "HR1",
+			"Description": "appropriating tax dollars to hurricane sady relief",
+			"Boxer": "n/a",
+			"Feinstein": "Nay",
+			"Dean Heller": "Yea",
+			"Harry Reid": "Nay",
+			"Jeff Flake": "n/a",
+			"John McCain": "Yea",
+			"Jeff Merkley": "Nay",
+			"Ron Wyden": "Nay",
+			"fulltext": "http://thomas.loc.gov/cgi-bin/bdquery/z?d112:HR00001:@@@L&summ2=m&"
+		}
+	]
 }

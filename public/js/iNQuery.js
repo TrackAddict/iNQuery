@@ -6,7 +6,7 @@
 }) */
 
 
-function calculateProportion(Senator1, Senator2)
+function evaluate(Senator1, Senator2)
 {
 
 
