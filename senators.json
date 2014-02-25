@@ -4,56 +4,71 @@
 			"name": "Barbra Boxer (Dem - CA)",
 			"state": "California",
 			"imageURL": "http://cdn.cnwimg.com/fBaseLargeSq/m/02c4pc8.jpg",
-			"website": "http://www.boxer.senate.gov/"
+			"website": "http://www.boxer.senate.gov/",
+			"jumpID": "Barbra Boxer (Dem - CA)"
 		},
 
 		{
 			"name": "Diane Feinstein (Dem - CA)",
 			"state": "California",
 			"imageURL": "http://cdn.cnwimg.com/fBaseLargeSq/m/02c7hld.jpg",
-			"website": "http://www.feinstein.Senate.gov/public/index.cfm/"
+			"website": "http://www.feinstein.Senate.gov/public/index.cfm/",
+			"jumpID": "Diane Feinstein (Dem - CA)"
+
 		},
 
 		{
 			"name": "Dean Heller (Rep - NV)",
 			"state": "Nevada",
 			"imageURL": "http://c4.nrostatic.com/sites/default/files/uploaded/dean_Heller.jpg",
-			"website": "http://www.heller.Senate.gov/public/index.cfm/"	
+			"website": "http://www.heller.Senate.gov/public/index.cfm/",
+			"jumpID": "Dean Heller (Rep - NV)"
+
 		},
 
 		{
 			"name": "Harry Reid (Dem - NV)",
 			"state": "Nevada",
 			"imageURL": "http://c0.nrostatic.com/sites/default/files/uploaded/pic_related_021014_SM_The-Do-Nothing-Senate-Harry-Reid.jpg",
-			"website": "http://www.reid.senate.gov/"
+			"website": "http://www.reid.senate.gov/",
+			"jumpID": "Harry Reid (Dem - NV)"
+
 		},
 
 		{
 			"name": "Jeff Flake (Rep - AZ)",
 			"state": "Arizona",
 			"imageURL": "http://blogs.phoenixnewtimes.com/valleyfever/jeff-flake-sq.jpg",
-			"website": "http://www.flake.senate.gov/public/index.cfm/"
+			"website": "http://www.flake.senate.gov/public/index.cfm/",
+			"jumpID": "Jeff Flake (Rep - AZ)"
+
 		},
 
 		{
 			"name": "John McCain (Rep - AZ)",
 			"state": "Arizona",
 			"imageURL": "http://thewallmachine.com/files/1375297784.jpg",
-			"website": "http://www.mccain.Senate.gov/public/index.cfm/"
+			"website": "http://www.mccain.Senate.gov/public/index.cfm/",
+			"jumpID": "John McCain (Rep - AZ)"
+
 		},
 
 		{
 			"name": "Jeff Merkley (Dem - OR)",
 			"state": "Oregon",
 			"imageURL": "https://www.hrc.org/files/images/meta_images/JeffMerkley_share_200.jpg",
-			"website": "http://www.merkley.Senate.gov/"
+			"website": "http://www.merkley.Senate.gov/",
+			"jumpID": "Jeff Merkley (Dem - OR)"
+
 		},
 
 		{
 			"name": "Ron Wyden (Dem - OR)",
 			"state": "Oregon",
 			"imageURL": "http://www.wired.com/images_blogs/business/2012/01/ron-wyden_small.jpg",
-			"website": "http://www.wyden.Senate.gov/"
+			"website": "http://www.wyden.Senate.gov/",
+			"jumpID": "Ron Wyden (Dem - OR)"
+
 		}
 
 
