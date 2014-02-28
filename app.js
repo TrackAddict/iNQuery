@@ -13,6 +13,7 @@ var expressSelect = require('./routes/senateSelect');
 var expressGovernors = require('./routes/governorSelect');
 var expressResults = require('./routes/results');
 var expressAbout = require('./routes/about');
+var expressLawsGallery = require('./routes/lawsgallery');
 var expressGallery = require('./routes/gallery');
 var expressHelp = require('./routes/help');
 // Example route
@@ -48,6 +49,7 @@ app.get('/senateSelect', expressSelect.viewSelect);
 app.get('/governorSelect', expressGovernors.viewGovernors);
 app.get('/results', expressResults.viewResults);
 app.get('/about', expressAbout.viewAbout);
+app.get('/lawsgallery', expressLawsGallery.viewLawsGallery);
 app.get('/gallery', expressGallery.viewGallery);
 app.get('/help', expressHelp.viewHelp);
 // Example route

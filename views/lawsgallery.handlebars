@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>The Gallery</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="css/lightbox.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="css/iNQuery.css" rel="stylesheet">
+
+  <script src = "js/jquery-1.11.0.js"></script>
+  <script src = "js/bootstrap.js"></script>
+  <script src = "js/hci-friends.js"></script>  
+
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    var availableTags = [
+      "Barbra Boxer (Dem - CA)",
+      "Diane Feinstein (Dem - CA)",
+      "Dean Heller (Rep - NV)",
+      "Harry Reid (Dem - NV)",
+      "Jeff Flake (Rep - AZ)",
+      "John McCain (Rep - AZ)",
+      "Jeff Merkley (Dem - OR)",
+      "Ron Wyden (Dem - OR)"
+    ];
+
+    $( "#find" ).autocomplete({
+      source: availableTags
+    });
+
+  });
+  </script>    
+</head>
+
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">iNQuery</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="senateSelect">Compare Records</a></li>
+          <li class="active"><a href="#">Senators Gallery</a></li>
+          <li><a href="help">User FAQ Guide</a></li>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" id="find" class="form-control"  placeholder="Find Representative">
+
+          <script type="text/javascript">
+          function getURL() {
+          var qun = document.getElementById('find').value;
+          var URL = "#" + qun + "";
+          location.href = URL;
+          }
+          </script>
+
+
+          </div>
+          <button type="button" class="btn btn-default" onClick=getURL();>Submit</button>
+        </form>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <!-- h1 through h6 are headers. The higher the number, the smaller the header -->
+    <!-- p means paragraph -->
+    <div class="jumbotron">
+      <h2 class="inContainer">United States Senators</h2>
+      <h4 class="inContainer">Gallery of the Senators</h4>
+      <!-- <button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button> -->
+    </div>
+  
+  <div class = "container">
+  <h4 class="leftBold">Senator Gallery</h4>
+
+  {{#each senators}}
+
+         <div class="row" id="{{jumpID}}">
+            <div class="col-sm-6 col-md-6">
+              <div class="thumbnail" >
+                <a href="{{imageURL}}" data-lightbox="senators" title="{{name}}">
+                  <img src="{{imageURL}}" alt="{{name}}"> 
+                </a>
+                <div class="caption">
+                  <div class="span7 text-center" >
+                      <h4>{{name}} </h4>
+                      <p><a href="{{website}}" class="btn btn-primary" role="button">Website</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  {{/each}}
+ </div>
+ <hr>
+ <ul class="pager">
+ <li class="previous"><a href="javascript:history.go(-1)">&larr; Back</a></li>
+ </ul>
+
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="js/lightbox-2.6.min.js"></script>
+  <script src = "../js/iNQuery.js"></script>
+
+</body>
+</html>
