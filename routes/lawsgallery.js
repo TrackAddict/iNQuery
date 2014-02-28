@@ -1,5 +1,5 @@
-var senators = require('../senators.json');
+var lawsgallery = require('../laws.json');
 
 exports.viewLawsGallery = function(req, res){
-	res.render('lawsgallery', senators);
+	res.render('lawsgallery', lawsgallery);
 };

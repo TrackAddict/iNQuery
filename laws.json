@@ -1,5 +1,5 @@
 {
-	"fiscal": [
+	"FederalSpending": [
 		{
 			"name": "S540",
 			"Description": "Raise debt ceiling",
@@ -71,7 +71,7 @@
 		}
 	],
 
-	"education": [
+	"Education": [
 		{
 			"name": "HR1911",
 			"Description": "setting federal school loan interest rates",
@@ -143,7 +143,7 @@
 		}
 	],
 
-	"taxation": [
+	"TaxPolicy": [
 		{
 			"name": "S743",
 			"Description": "distrubution and use of taxes",
