@@ -100,9 +100,25 @@
   <div class = "container">
   <h4 class="leftBold">Senator Gallery</h4>
 
+           <div class="col-lg-6">
+            <div class="input-group">
+              <input type="text" class="form-control" id="find2" 
+              placeholder="Find Representative">
+              <script type="text/javascript">
+                  function getURL2() {
+                  var qun = document.getElementById('find2').value;
+                  var URL = "#" + qun + "";
+                  location.href = URL;
+                  }
+              </script>
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" onClick=getURL2();></span></button>
+              </span>
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+          <br>
 
-
-          <form class="navbar-form navbar-left" role="search">
+<!--           <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
             <input type="text" id="find2" class="form-control"  placeholder="Find Representative">
 
@@ -117,7 +133,7 @@
 
           </div>
           <button type="button" class="btn btn-default" onClick=getURL2();>Submit</button>
-        </form>
+        </form> -->
 
   {{#each senators}}
 
