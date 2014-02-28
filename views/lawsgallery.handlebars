@@ -2,7 +2,7 @@
 
 <html>
 <head>
-  <title>The Gallery</title> 
+  <title>The Laws Gallery</title> 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -53,6 +53,9 @@
         <a class="navbar-brand" href="/">iNQuery</a>
       </div>
 
+
+
+      <a name = "topoflawsgallery">
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
@@ -92,9 +95,11 @@
     </div>
   
   <div class = "container">
-  <h4 class="leftBold">Senator Gallery</h4>
 
-  {{#each senators}}
+
+<h4 class="leftBold"> Federal Spending </h4>
+<hr>
+  {{#each FederalSpending}}
 
          <div class="row" id="{{jumpID}}">
             <div class="col-sm-6 col-md-6">
@@ -105,7 +110,8 @@
                 <div class="caption">
                   <div class="span7 text-center" >
                       <h4>{{name}} </h4>
-                      <p><a href="{{website}}" class="btn btn-primary" role="button">Website</a></p>
+                      <h4>{{Description}}</h4>
+                      <p><a href="{{fulltext}}" class="btn btn-primary" role="button">Website</a></p>
                   </div>
                 </div>
               </div>
@@ -113,10 +119,20 @@
           </div>
   
   {{/each}}
+
+<h4 class="leftBold"> Education </h4>
+<hr>
+ 
+<h4 class="leftBold"> Tax Policy </h4>
+<hr>
+
  </div>
  <hr>
  <ul class="pager">
  <li class="previous"><a href="javascript:history.go(-1)">&larr; Back</a></li>
+
+  <li class="previous"><a href="#topoflawsgallery">&uarr; Top</a></li>
+
  </ul>
 
   <script src="../js/bootstrap.min.js"></script>
