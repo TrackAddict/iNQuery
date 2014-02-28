@@ -1,7 +1,7 @@
 {
 	"buttons": [
 		{
-			"name": "Senators",
+			"name": "Senator Comparison",
 			"url": "senateSelect",
 			"imageURL": "http://www.conservapedia.com/images/thumb/4/40/US_senate_seal.png/200px-US_senate_seal.png",
 			"projectNumber": "1"
