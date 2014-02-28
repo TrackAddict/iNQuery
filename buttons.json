@@ -10,9 +10,18 @@
 		{
 			"name": "See All Senators",
 			"url": "gallery",
-			"imageURL": "http://achievethecore.org/content/upload/ngalogo3.jpg",
+			"imageURL": "http://www.technobuffalo.com/wp-content/uploads/2013/01/06senate2-600.jpg",
 			"projectNumber": "2"
+		},
+
+		{
+			"name": "See All Laws",
+			"url": "lawsgallery",
+			"imageURL": "http://www.ndm-legal.com/wp-content/uploads/2012/04/01.jpg",
+			"projectNumber": "3"
 		}
+
+
 
 	]
 }
