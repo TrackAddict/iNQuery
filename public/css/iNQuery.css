@@ -33,6 +33,7 @@ h1 {
 .jumbotron {
 	position: relative;
 	background: none;
+    height: 170px;
 }
 
 .jumbotron:after {
