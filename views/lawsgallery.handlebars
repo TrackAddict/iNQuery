@@ -105,13 +105,13 @@
             <div class="col-sm-6 col-md-6">
               <div class="thumbnail" >
                 <a href="{{imageURL}}" data-lightbox="senators" title="{{name}}">
-                  <img src="{{imageURL}}" alt="{{name}}"> 
+                 <!--  <img src="{{imageURL}}" alt="{{name}}">  -->
                 </a>
                 <div class="caption">
                   <div class="span7 text-center" >
-                      <h4>{{name}} </h4>
+                      <h4><span class="glyphicon glyphicon-book"> {{name}}</h4>
                       <h4>{{Description}}</h4>
-                      <p><a href="{{fulltext}}" class="btn btn-primary" role="button">Website</a></p>
+                  <p><a href="{{fulltext}}" class="btn btn-primary" role="button">Website</a></p>
                   </div>
                 </div>
               </div>
@@ -130,9 +130,7 @@
  <hr>
  <ul class="pager">
  <li class="previous"><a href="javascript:history.go(-1)">&larr; Back</a></li>
-
-  <li class="previous"><a href="#topoflawsgallery">&uarr; Top</a></li>
-
+  <li><a href="#topoflawsgallery">&uarr; Top</a></li>
  </ul>
 
   <script src="../js/bootstrap.min.js"></script>
