@@ -89,7 +89,7 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <div class="container">
+  <div class="container" id="mainContainer">
     <!-- h1 through h6 are headers. The higher the number, the smaller the header -->
     <!-- p means paragraph -->
     <div class="jumbotron">
@@ -140,7 +140,8 @@
     </div>
 
     <div class="span7 text-center">
-    <a href="results"><button id="submitBtn" type="button" class="btn btn-default">Submit</button></a>
+       <!-- href="results" -->
+   <a><button id="submitBtn" type="button" class="btn btn-default" onClick="doSomething();">Submit</button></a>
     </div>
   </form>
   <hr>
@@ -149,13 +150,74 @@
   <li><a href="#top">&uarr; Top</a></li>
 
   </ul>
+</div>
 
   <script src="../js/bootstrap.min.js"></script>
   <script src = "../js/iNQuery.js"></script>
 
 
+<script>
+  function doSomething(){
+    
+    $('#mainContainer').hide();
+    $('#showthis').show();
 
-   
+  }
+</script>
+
+
+          <div class="container" id="showthis" style= "display:none">
+              
+              <div class="jumbotron">
+                <h2 class="inContainer">Comparison</h2>
+                <h4 class="inContainer">Comparison of your two chosen senators</h4>
+              
+              </div>
+
+
+              <h4 class="leftBold">Your Comparison:</h4>
+              
+
+                  <table class="table table-bordered">
+                    <tr>
+                      <th>Law</th>
+                      <th>Barbra Boxer (Vote)</th>
+                      <th>Diane Feinstein (Vote)</th>
+                    </tr>
+                  <tr>
+                    <td><a href="http://thomas.loc.gov/cgi-bin/query/D?c113:4:./temp/~c113Ppbmgx::">S540: Raise debt ceiling</a></td>
+                      <td>
+                        <span class="glyphicon glyphicon-ok"></span>
+                      </td>
+                      <td><span class="glyphicon glyphicon-ok"></span></td>
+                  </tr>
+                  <tr>
+                    <td><a href="http://thomas.loc.gov/cgi-bin/query/D?c113:4:./temp/~c113Ppbmgx::">S1963: Repeal portions of earlier spending bill</a></td>
+                      <td><span class="glyphicon glyphicon-ok"></span></td>
+                      <td><span class="glyphicon glyphicon-ok"></span></td>
+                  </tr>
+                  <tr>
+                    <td><a href="http://thomas.loc.gov/cgi-bin/query/z?c113:S.1845:">S1845: Extend unemployment benefits</a></td>
+                      <td><span class="glyphicon glyphicon-ok"></span></td>
+                      <td><span class="glyphicon glyphicon-ok"></span></td>
+                  </tr>
+                  <tr>
+                    <td><a href="http://thomas.loc.gov/cgi-bin/query/D?c113:1:./temp/~c113UhFy0e::">HJ106: Extends short-term spending bill</a></td>
+                      <td><span class="glyphicon glyphicon-ok"></span></td>
+                      <td><span class="glyphicon glyphicon-ok"></span></td>
+                  </tr>
+                  </table>
+              
+              <div class="span7 text-center">
+                <p style="color:red;font-size:25px;"><strong>100%</strong></p>
+              </div>
+              <hr>
+              <ul class="pager">
+              <li class="previous"><a href="javascript:history.go(-1)">&larr; Back</a></li>
+              <li><a href="#top">&uarr; Top</a></li>
+              </ul>
+            </div>
+
 </body>
 </html>
 
