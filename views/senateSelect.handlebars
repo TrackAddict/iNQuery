@@ -125,13 +125,7 @@ function getPost()
   </nav>
 
   <div class="container" id="mainContainer">
-    <!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-    <!-- p means paragraph -->
-<!--     <div class="jumbotron">
-      <h2 class="inContainer">Comparison: Senators</h2>
-      <h4 class="inContainer">Two current Senators &middot; One central issues</h4>
-      <!-- <button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button> 
-    </div> -->
+
 
   <form id="projectForm" role="form">
 
@@ -261,6 +255,8 @@ $.getJSON( "senatorsJSONDisplay", function( data ) {
                   $.each(val4, function(key5, val5){
                    //alert("5th nested " + key5 + " : " + val5);
                     whichRowXCol = whichRowXCol + 1;
+                    $('#x' + whichRowXCol).html(key5);
+
                     if (val5 == 'Yea')
                     {
                       $('#' + whichRowXCol).html('<td><span class="glyphicon glyphicon-ok"></span></td>');
@@ -321,7 +317,7 @@ $.each( totalSenators, function( key, val ) {
 
 
                   // Variable is to keep track of the coordinate we are filling in.
-                  var whichRowXCol = 4; 
+                  var whichRowXCol = 5; 
                   $.each(val4, function(key5, val5){
                    //alert("5th nested " + key5 + " : " + val5);
                     whichRowXCol = whichRowXCol + 1;
@@ -398,6 +394,8 @@ $.each( totalSenators, function( key, val ) {
                           $.each(val4, function(key5, val5){
                            //alert("5th nested " + key5 + " : " + val5);
                             whichRowXCol = whichRowXCol + 1;
+                            $('#x' + whichRowXCol).html(key5);
+
                             if (val5 == 'Yea')
                             {
                               $('#' + whichRowXCol).html('<td><span class="glyphicon glyphicon-ok"></span></td>');
@@ -458,10 +456,12 @@ $.each( totalSenators, function( key, val ) {
 
 
                           // Variable is to keep track of the coordinate we are filling in.
-                          var whichRowXCol = 4; 
+                          var whichRowXCol = 5; 
                           $.each(val4, function(key5, val5){
                            //alert("5th nested " + key5 + " : " + val5);
                             whichRowXCol = whichRowXCol + 1;
+                            $('#x' + whichRowXCol).html(key5);
+
                             if (val5 == 'Yea')
                             {
                               $('#' + whichRowXCol).html('<td><span class="glyphicon glyphicon-ok"></span></td>');
@@ -604,7 +604,7 @@ $.each( totalSenators, function( key, val ) {
 
 
                                     // Variable is to keep track of the coordinate we are filling in.
-                                    var whichRowXCol = 4; 
+                                    var whichRowXCol = 5; 
                                     $.each(val4, function(key5, val5){
                                      //alert("5th nested " + key5 + " : " + val5);
                                       whichRowXCol = whichRowXCol + 1;
@@ -660,26 +660,32 @@ $.each( totalSenators, function( key, val ) {
                       <th id="senator2"></th>
                     </tr>
                   <tr>
-                    <td ><a href="http://thomas.loc.gov/cgi-bin/query/D?c113:4:./temp/~c113Ppbmgx::">S540: Raise debt ceiling</a></td>
+                    <td id="x1"></td>
                       <td id="1">
                         
                       </td>
-                      <td id="5"></td>
-                  </tr>
-                  <tr>
-                    <td><a href="http://thomas.loc.gov/cgi-bin/query/D?c113:4:./temp/~c113Ppbmgx::">S1963: Repeal portions of earlier spending bill</a></td>
-                      <td id="2"></td>
                       <td id="6"></td>
                   </tr>
                   <tr>
-                    <td><a href="http://thomas.loc.gov/cgi-bin/query/z?c113:S.1845:">S1845: Extend unemployment benefits</a></td>
-                      <td id="3"></td>
+                    <td id="x2"></td>
+                      <td id="2"></td>
                       <td id="7"></td>
                   </tr>
                   <tr>
-                    <td><a href="http://thomas.loc.gov/cgi-bin/query/D?c113:1:./temp/~c113UhFy0e::">HJ106: Extends short-term spending bill</a></td>
-                      <td id="4"></td>
+                    <td id="x3"></td>                      
+                      <td id="3"></td>
                       <td id="8"></td>
+                  </tr>
+                  <tr>
+                    <td id="x4"></td>
+                      <td id="4"></td>
+                      <td id="9"></td>
+                  </tr>
+
+                  <tr>
+                    <td id="x5"></td>
+                      <td id="5"></td>
+                      <td id="10"></td>
                   </tr>
                   </table>
               
