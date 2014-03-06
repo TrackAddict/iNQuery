@@ -16,6 +16,7 @@ var expressAbout = require('./routes/about');
 var expressLawsGallery = require('./routes/lawsgallery');
 var expressGallery = require('./routes/gallery');
 var expressHelp = require('./routes/help');
+var expressSenatorJSON = require('./routes/senatorsJSONDisplay');
 // Example route
 // var user = require('./routes/user');
 
@@ -52,6 +53,7 @@ app.get('/about', expressAbout.viewAbout);
 app.get('/lawsgallery', expressLawsGallery.viewLawsGallery);
 app.get('/gallery', expressGallery.viewGallery);
 app.get('/help', expressHelp.viewHelp);
+app.get('/senatorsJSONDisplay', expressSenatorJSON.viewSenatorsJSON);
 // Example route
 // app.get('/users', user.list);
 

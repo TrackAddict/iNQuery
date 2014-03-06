@@ -40,7 +40,8 @@
 </head>
 
 <body>
-        <a name = "topoflawsgallery">
+    <a name = "topoflawsgallery">
+    <body style="background-color:#E0E0E0;">
 
     <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
@@ -123,9 +124,50 @@
 
 <h4 class="leftBold"> Education </h4>
 <hr>
+    {{#each Education}}
+
+             <div class="row" id="{{jumpID}}">
+                <div class="col-sm-6 col-md-6">
+                  <div class="thumbnail" >
+                    <a href="{{imageURL}}" data-lightbox="senators" title="{{name}}">
+                     <!--  <img src="{{imageURL}}" alt="{{name}}">  -->
+                    </a>
+                    <div class="caption">
+                      <div class="span7 text-center" >
+                          <h4><span class="glyphicon glyphicon-pencil"> {{name}}</h4>
+                          <h4>{{Description}}</h4>
+                      <p><a href="{{fulltext}}" class="btn btn-primary" role="button">Website</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+      {{/each}}
  
 <h4 class="leftBold"> Tax Policy </h4>
 <hr>
+
+    {{#each TaxPolicy}}
+
+             <div class="row" id="{{jumpID}}">
+                <div class="col-sm-6 col-md-6">
+                  <div class="thumbnail" >
+                    <a href="{{imageURL}}" data-lightbox="senators" title="{{name}}">
+                     <!--  <img src="{{imageURL}}" alt="{{name}}">  -->
+                    </a>
+                    <div class="caption">
+                      <div class="span7 text-center" >
+                          <h4><span class="glyphicon glyphicon-tag"> {{name}}</h4>
+                          <h4>{{Description}}</h4>
+                      <p><a href="{{fulltext}}" class="btn btn-primary" role="button">Website</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+      {{/each}}
 
  </div>
  <hr>
