@@ -21,6 +21,36 @@
   <link rel="stylesheet" href="css/jquery-ui.css">
   <script src="js/jquery-1.9.1.js"></script>
   <script src="js/jquery-ui.js"></script>
+  
+
+
+
+  <script>
+
+function getPost()
+   {
+      var fname = document.getElementById("fname").value;
+      var lname = document.getElementById("lname").value;
+          var v = {
+       "name": {
+           "firstname": fname,
+           "lastname": lname 
+       }
+    };
+   }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
   <script>
   $(function() {
     var availableTags = [
@@ -107,17 +137,15 @@
   <h4 class="bigh3">Compare Senators:</h4>
     <div class="form-group">
       <label for="value">First Senator:</label>
-      <input type="value" class="form-control" id="names1" placeholder="Name, State, or Party">
+      <input type="value" class="form-control" id="names1" placeholder="Name, State, or Party" >
     </div>
+
+
 
     <div class="form-group">
       <label for="value">Second Senator:</label>
       <input type="value" class="form-control" id="names2" placeholder="Name, State, or Party">
     </div>
-
-
-
-
 
     <h4 class="bigh3">On This Issue:</h4>
     <div class="radio">
@@ -138,6 +166,10 @@
         Tax Policy
       </label>
     </div>
+
+
+
+
 
     <div class="span7 text-center">
     <a href="results"><button id="submitBtn" type="button" class="btn btn-default">Submit</button></a>
