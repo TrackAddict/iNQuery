@@ -25,7 +25,7 @@
 
 <body>
 	<a name = "top">
-	<body style="background-color:#E0E0E0;">
+	<body>
 
 	<nav class="navbar navbar-default" role="navigation">
 	  <div class="container-fluid">
@@ -62,11 +62,11 @@
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
-		<div class="jumbotron">
-			<h2 class="inContainer">Welcome to iNQuery</h2>
-			<h4 class="inContainer">Senators &middot; Laws </h4>
-			<!-- <button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button> -->
-		</div>
+<!-- 		<div class="jumbotron">
+			<h3 class="inContainer">Welcome to iNQuery</32>
+			
+			<button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button>
+		</div> -->
 
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
@@ -78,11 +78,11 @@
 
 
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-12">
 				<div class="project" id="project" + "{{projectNumber}}">
 					<a href="{{url}}" class="thumbnail">
-						<img src="{{imageURL}}">
-						<button type="button" class="btn btn-default">{{name}}</button>
+						<img src="{{imageURL}}" class="img-circle">
+						<button type="button" class="btn btn-info btn-xs">{{name}}</button>
 					</a>
 				</div>
 			</div>
