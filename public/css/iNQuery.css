@@ -12,7 +12,7 @@
 /* this style exists to make it obvious that you've successfully linked
    the CSS to the page. feel free to remove it once the link is working. */
 body {
-     border: 1px dotted gray;
+     /*border: 1px dotted gray;*/
      padding: 20px;
      background-color:#B8DBFF;
 }
@@ -21,6 +21,9 @@ body {
      text-align: center;
 }
 
+.thumbnail {
+    background-color: #B8DBFF;
+}
 
 .leftBold {
     text-align: left;
@@ -86,29 +89,26 @@ form {
     height:70%;
 }
 
-a.thumbnail{
-    background-color: #B8DBFF;
-}
 
 .navbar-default {
-    border-color: #c0392b;
+    border-color: #FFFFFF;
     background-color: #e0162b;
 
 }
 .navbar-default .navbar-brand {
-    color: #0052a5;
+    color: #000000;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-    color: #eaeaea;
+    color: #B8DBFF;
 }
 .navbar-default .navbar-text {
     color: #0052a5;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #0052a5;
+    color: #000000;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #eaeaea;
+    color: #B8DBFF;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #eaeaea;
@@ -119,18 +119,18 @@ a.thumbnail{
     background-color: #c0392b;
 }
 .navbar-default .navbar-toggle {
-    border-color: #c0392b;
+    border-color: #B8DBFF;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #c0392b;
+    background-color: #FFFFFF;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #0052a5;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-    border-color: #c0392b;
-    background-color: #E64253;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
 
 }
 
@@ -138,7 +138,7 @@ a.thumbnail{
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-        color: #c0392b;
+        color: #1E90FF;
         
 }
 
