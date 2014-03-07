@@ -109,7 +109,7 @@ function getPost()
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><a href="/">Home</a></li>
-          <li class="active"><a href="#">Compare Records</a></li>
+          <li class="active"><a href="#">Senator Comparison</a></li>
           <li><a href="lawsgallery">Laws Gallery</a></li>
           <li><a href="gallery">Senators Gallery</a></li>
           <li><a href="help">User FAQ Guide</a></li>
@@ -544,6 +544,7 @@ $.each( totalSenators, function( key, val ) {
                                     $.each(val4, function(key5, val5){
                                      //alert("5th nested " + key5 + " : " + val5);
                                       whichRowXCol = whichRowXCol + 1;
+                                      $('#x' + whichRowXCol).html(key5);
                                       if (val5 == 'Yea')
                                       {
                                         $('#' + whichRowXCol).html('<td><span class="glyphicon glyphicon-ok"></span></td>');
@@ -644,11 +645,7 @@ $.each( totalSenators, function( key, val ) {
 
           <div class="container" id="showthis" style= "display:none">
               
-              <div class="jumbotron">
-                <h2 class="inContainer">Comparison</h2>
-                <h4 class="inContainer">Comparison of your two chosen senators</h4>
-              
-              </div>
+
 
 
               <h4 class="leftBold">Your Comparison:</h4>
