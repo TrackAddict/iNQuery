@@ -2,7 +2,24 @@
 
 <html>
 <head>
-  <title>Senator Comparison</title> 
+  <!-- Google Analytics Content Experiment code -->
+<script>function utmx_section(){}function utmx(){}(function(){var
+k='83064628-0',d=document,l=d.location,c=d.cookie;
+if(l.search.indexOf('utm_expid='+k)>0)return;
+function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+</script><script>utmx('url','A/B');</script>
+<!-- End of Google Analytics Content Experiment code -->
+
+
+
+  <title>Welcome to iNQUery</title> 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -10,86 +27,22 @@
   <link href="css/iNQuery.css" rel="stylesheet">
   <!-- this is a comment in HTML -->
 
+  <script src = "js/jquery-1.11.0.js"></script>
+  <script src = "js/bootstrap.js"></script>
+  <script src = "js/hci-friends.js"></script>
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->        
-<meta charset="utf-8">
-  <title>jQuery UI Autocomplete - Default functionality</title>
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <script src="js/jquery-1.9.1.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  
-
-
-
-  <script>
-
-function getPost()
-   {
-      var fname = document.getElementById("fname").value;
-      var lname = document.getElementById("lname").value;
-          var v = {
-       "name": {
-           "firstname": fname,
-           "lastname": lname 
-       }
-    };
-   }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-  <script>
-  $(function() {
-    var availableTags = [
-      "Barbra Boxer (Dem - CA)",
-      "Diane Feinstein (Dem - CA)",
-      "Dean Heller (Rep - NV)",
-      "Harry Reid (Dem - NV)",
-      "Jeff Flake (Rep - AZ)",
-      "John McCain (Rep - AZ)",
-      "Jeff Merkley (Dem - OR)",
-      "Ron Wyden (Dem - OR)"
-    ];
-
-    $( "#names1" ).autocomplete({
-      source: availableTags
-    });
-
-    $( "#names2" ).autocomplete({
-      source: availableTags
-    });
-
-    $( "#find" ).autocomplete({
-      source: availableTags
-    });
-
-  });
-
-  var senator1 = "nothing";
-  var senator2 = "nothing";
-  </script>
-
-
 </head>
 
 <body>
-
-
-
   <a name = "top">
+  <body>
 
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
@@ -100,611 +53,94 @@ function getPost()
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-
         </button>
-        <a class="navbar-brand" href="/">iNQuery</a>
+        <a class="navbar-brand" href="#">iNQuery</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="/">Home</a></li>
-<!--           <li class="active"><a href="#">Senator Comparison</a></li>
- -->          <li><a href="lawsgallery">Laws Gallery</a></li>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="senateSelect">Senator Comparison</a></li>
+          <li><a href="lawsgallery">Laws Gallery</a></li>
           <li><a href="gallery">Senators Gallery</a></li>
           <li><a href="help">User FAQ Guide</a></li>
-<!--         <form class="navbar-form navbar-left" role="search">
+<!--        <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
-            <input type="text" class="form-control" id = "find" placeholder="Find Representative">
+            <input type="text" class="form-control" placeholder="Find Representative">
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form> -->
-        
+
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 
-  <div class="container" id="mainContainer">
+  <div class="container">
+    <!-- h1 through h6 are headers. The higher the number, the smaller the header -->
+    <!-- p means paragraph -->
+<!--    <div class="jumbotron">
+      <h3 class="inContainer">Welcome to iNQuery</32>
+
+      <button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button>
+    </div> -->
+
+    <!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
+    <!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
+    <!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
+
+    {{#each buttons}}
 
 
-  <form id="projectForm" role="form">
 
 
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="project" id="project" + "{{projectNumber}}">
+          <a href="{{url}}" class="thumbnail">
+            <img src="{{imageURL}}" class="img-circle">
+            <h4 class="inContainer">{{name}}</h4>
+             <!--<button type="button" class="btn btn-info btn-xs">{{name}}</button> -->
+          </a>
+        </div>
+      </div>
+      {{/each}}
 
-  
+      <!--  <div class="col-md-6">
+        <div class="project" id="project2">
+          <a href="governorselect.html" class="thumbnail">
+            <img src="../images/nga.logo.jpg" alt="Lorem Pixel image" class="img">
+            <button type="button" class="btn btn-default">Governors</button>
+          </a>
+        </div>
+      </div>
+    </div> -->
 
-  <h4 class="bigh3">Compare Senators:</h4>
-    <div class="form-group">
-      <label for="value">First Senator:</label>
-      <input type="value" class="form-control" id="names1" placeholder="Name, State, or Party" >
+
+    <hr>
+    <div class="span7 text-right">
+      <a class="btn btn-default btn-xs" href="about" role="button">
+      About iNQuery</a>
+      <!-- <li><a href="#top">&uarr; Top</a></li> -->
+
     </div>
 
 
 
-    <div class="form-group">
-      <label for="value">Second Senator:</label>
-      <input type="value" class="form-control" id="names2" placeholder="Name, State, or Party">
-    </div>
 
-    <h4 class="bigh3">On This Issue:</h4>
-    <div class="radio">
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios1" value="#project1">
-        Federal Spending
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios2" value="#project2">
-        Education
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="optionsRadios" id="optionsRadios2" value="#project6">
-        Tax Policy
-      </label>
-    </div>
 
 
+  <script src="https://code.jquery.com/jquery.js"></script>
 
-
-
-    <div class="span7 text-center">
-       <!-- href="results" -->
-   <a><button id="submitBtn" type="button" class="btn btn-default" onClick="doSomething();">Submit</button></a>
-    </div>
-  </form>
-  <hr>
-  <ul class="pager">
-  <li class="previous"><a href="#">&larr; Back</a></li>
-  <li><a id="poop" href="#top">&uarr; Top</a></li>
-
-  </ul>
-</div>
-
-  <script src="../js/bootstrap.min.js"></script>
-  <script src = "../js/iNQuery.js"></script>
-
-
-<script>
-  function doSomething(){
-    senator1 = (document.getElementById('names1').value).toString();
-    senator2 = (document.getElementById('names2').value).toString();
-    $('#mainContainer').hide();
-    $('#showthis').show();
-
-    if(document.getElementById('optionsRadios1').checked)
-    {
-      $('#whichLaw').html('Federal Spending');
-      var checked = 'Federal Spending';
-    }
-
-    else if(document.getElementById('optionsRadios2').checked)
-    {
-      $('#whichLaw').html('Education');
-      var checked = 'Education';
-    }
-
-    else 
-    {
-      $('#whichLaw').html('Tax Policy');
-      var checked = 'Tax Policy';
-    }
-
-
-
-    if(checked == 'Federal Spending')
-    {
-$.getJSON( "senatorsJSONDisplay", function( data ) {
-  var totalSenators = data;
-  $.each( totalSenators, function( key, val ) {
-    $.each(val, function(key2, val2) {
-      //alert("This is within each key2" + key2 + "with val: " + val2);
-
-
-    var checkFlag = 0;
-
-      // This will give you key and value pairs for name: and the actual name
-      $.each(val2, function(key3, val3){
-        //alert("This is within each key3: " + key3 + "with val: " + val3); 
-        if(val3 == senator1)
-        {
-          $('#senator1').html(senator1);
-          checkFlag = 1;
-
-        }
-
-
-        //alert("we're outside and the flag is: " + checkFlag);
-
-
-         if(key3 == "FederalSpending")
-        {
-          if(checkFlag == 1)
-          {
-
-            $.each(val3, function(key4, val4) 
-            {
-                  //alert("4th nested " + key4 + ": " + val4);
-                  // This is the law and the response.
-
-
-                  // Variable is to keep track of the coordinate we are filling in.
-                  var whichRowXCol = 0; 
-                  $.each(val4, function(key5, val5){
-                   //alert("5th nested " + key5 + " : " + val5);
-                    whichRowXCol = whichRowXCol + 1;
-                    $('#x' + whichRowXCol).html(key5);
-
-                    if (val5 == 'Yea')
-                    {
-                      $('#' + whichRowXCol).html('<td><span class="glyphicon glyphicon-ok"></span></td>');
-                    }
-
-                    else
-                    {
-                      $('#' + whichRowXCol).html('<td><span class="glyphicon glyphicon-remove"></span></td>');
-                    }
-
-                  });
-
-            });
-            checkFlag = 0;
-          } 
-        }
-
-
-      });
-    });
-
-  });
-
-
-
-
-
-$.each( totalSenators, function( key, val ) {
-    $.each(val, function(key2, val2) {
-      //alert("This is within each key2" + key2 + "with val: " + val2);
-
-
-    var checkFlag = 0;
-
-      // This will give you key and value pairs for name: and the actual name
-      $.each(val2, function(key3, val3){
-        //alert("This is within each key3: " + key3 + "with val: " + val3); 
-        if(val3 == senator2)
-        {
-          $('#senator2').html(senator2);
-          checkFlag = 1;
-
-        }
-
-
-        //alert("we're outside and the flag is: " + checkFlag);
-
-
-         if(key3 == "FederalSpending")
-        {
-          if(checkFlag == 1)
-          {
-
-            $.each(val3, function(key4, val4) 
-            {
-                  //alert("4th nested " + key4 + ": " + val4);
-                  // This is the law and the response.
-
-
-                  // Variable is to keep track of the coordinate we are filling in.
-                  var whichRowXCol = 5; 
-                  $.each(val4, function(key5, val5){
-                   //alert("5th nested " + key5 + " : " + val5);
-                    whichRowXCol = whichRowXCol + 1;
-                    if (val5 == 'Yea')
-                    {
-                      $('#' + whichRowXCol).html('<td><span class="glyphicon glyphicon-ok"></span></td>');
-                    }
-
-                    else
-                    {
-                      $('#' + whichRowXCol).html('<td><span class="glyphicon glyphicon-remove"></span></td>');
-                    }
-
-                  });
-
-            });
-            checkFlag = 0;
-          } 
-        }
-
-
-      });
-    });
-
-  });
-
-
-
-
- 
-
-});
-
-    }
-
-    else if(checked == 'Education')
-    {
-        $.getJSON( "senatorsJSONDisplay", function( data ) {
-          var totalSenators = data;
-          $.each( totalSenators, function( key, val ) {
-            $.each(val, function(key2, val2) {
-              //alert("This is within each key2" + key2 + "with val: " + val2);
-
-
-            var checkFlag = 0;
-
-              // This will give you key and value pairs for name: and the actual name
-              $.each(val2, function(key3, val3){
-                //alert("This is within each key3: " + key3 + "with val: " + val3); 
-                if(val3 == senator1)
-                {
-                  $('#senator1').html(senator1);
-                  checkFlag = 1;
-
-                }
-
-
-                //alert("we're outside and the flag is: " + checkFlag);
-
-
-                 if(key3 == "Education")
-                {
-                  if(checkFlag == 1)
-                  {
-
-                    $.each(val3, function(key4, val4) 
-                    {
-                          //alert("4th nested " + key4 + ": " + val4);
-                          // This is the law and the response.
-
-
-                          // Variable is to keep track of the coordinate we are filling in.
-                          var whichRowXCol = 0; 
-                          $.each(val4, function(key5, val5){
-                           //alert("5th nested " + key5 + " : " + val5);
-                            whichRowXCol = whichRowXCol + 1;
-                            $('#x' + whichRowXCol).html(key5);
-
-                            if (val5 == 'Yea')
-                            {
-                              $('#' + whichRowXCol).html('<td><span class="glyphicon glyphicon-ok"></span></td>');
-                            }
-
-                            else
-                            {
-                              $('#' + whichRowXCol).html('<td><span class="glyphicon glyphicon-remove"></span></td>');
-                            }
-
-                          });
-
-                    });
-                    checkFlag = 0;
-                  } 
-                }
-
-
-              });
-            });
-
-          });
-
-
-
-
-
-        $.each( totalSenators, function( key, val ) {
-            $.each(val, function(key2, val2) {
-              //alert("This is within each key2" + key2 + "with val: " + val2);
-
-
-            var checkFlag = 0;
-
-              // This will give you key and value pairs for name: and the actual name
-              $.each(val2, function(key3, val3){
-                //alert("This is within each key3: " + key3 + "with val: " + val3); 
-                if(val3 == senator2)
-                {
-                  $('#senator2').html(senator2);
-                  checkFlag = 1;
-
-                }
-
-
-                //alert("we're outside and the flag is: " + checkFlag);
-
-
-                 if(key3 == "Education")
-                {
-                  if(checkFlag == 1)
-                  {
-
-                    $.each(val3, function(key4, val4) 
-                    {
-                          //alert("4th nested " + key4 + ": " + val4);
-                          // This is the law and the response.
-
-
-                          // Variable is to keep track of the coordinate we are filling in.
-                          var whichRowXCol = 5; 
-                          $.each(val4, function(key5, val5){
-                           //alert("5th nested " + key5 + " : " + val5);
-                            whichRowXCol = whichRowXCol + 1;
-                            $('#x' + whichRowXCol).html(key5);
-
-                            if (val5 == 'Yea')
-                            {
-                              $('#' + whichRowXCol).html('<td><span class="glyphicon glyphicon-ok"></span></td>');
-                            }
-
-                            else
-                            {
-                              $('#' + whichRowXCol).html('<td><span class="glyphicon glyphicon-remove"></span></td>');
-                            }
-
-                          });
-
-                    });
-                    checkFlag = 0;
-                  } 
-                }
-
-
-              });
-            });
-
-          });
-
-
-
-
-         
-
-        });
-
-
-
-
-
-
-
-    }
-
-    else
-    {
-
-
-
-          $.getJSON( "senatorsJSONDisplay", function( data ) {
-                    var totalSenators = data;
-                    $.each( totalSenators, function( key, val ) {
-                      $.each(val, function(key2, val2) {
-                        //alert("This is within each key2" + key2 + "with val: " + val2);
-
-
-                      var checkFlag = 0;
-
-                        // This will give you key and value pairs for name: and the actual name
-                        $.each(val2, function(key3, val3){
-                          //alert("This is within each key3: " + key3 + "with val: " + val3); 
-                          if(val3 == senator1)
-                          {
-                            $('#senator1').html(senator1);
-                            checkFlag = 1;
-
-                          }
-
-
-                          //alert("we're outside and the flag is: " + checkFlag);
-
-
-                           if(key3 == "TaxPolicy")
-                          {
-                            if(checkFlag == 1)
-                            {
-
-                              $.each(val3, function(key4, val4) 
-                              {
-                                    //alert("4th nested " + key4 + ": " + val4);
-                                    // This is the law and the response.
-
-
-                                    // Variable is to keep track of the coordinate we are filling in.
-                                    var whichRowXCol = 0; 
-                                    $.each(val4, function(key5, val5){
-                                     //alert("5th nested " + key5 + " : " + val5);
-                                      whichRowXCol = whichRowXCol + 1;
-                                      $('#x' + whichRowXCol).html(key5);
-                                      if (val5 == 'Yea')
-                                      {
-                                        $('#' + whichRowXCol).html('<td><span class="glyphicon glyphicon-ok"></span></td>');
-                                      }
-
-                                      else
-                                      {
-                                        $('#' + whichRowXCol).html('<td><span class="glyphicon glyphicon-remove"></span></td>');
-                                      }
-
-                                    });
-
-                              });
-                              checkFlag = 0;
-                            } 
-                          }
-
-
-                        });
-                      });
-
-                    });
-
-
-
-
-
-                  $.each( totalSenators, function( key, val ) {
-                      $.each(val, function(key2, val2) {
-                        //alert("This is within each key2" + key2 + "with val: " + val2);
-
-
-                      var checkFlag = 0;
-
-                        // This will give you key and value pairs for name: and the actual name
-                        $.each(val2, function(key3, val3){
-                          //alert("This is within each key3: " + key3 + "with val: " + val3); 
-                          if(val3 == senator2)
-                          {
-                            $('#senator2').html(senator2);
-                            checkFlag = 1;
-
-                          }
-
-
-                          //alert("we're outside and the flag is: " + checkFlag);
-
-
-                           if(key3 == "TaxPolicy")
-                          {
-                            if(checkFlag == 1)
-                            {
-
-                              $.each(val3, function(key4, val4) 
-                              {
-                                    //alert("4th nested " + key4 + ": " + val4);
-                                    // This is the law and the response.
-
-
-                                    // Variable is to keep track of the coordinate we are filling in.
-                                    var whichRowXCol = 5; 
-                                    $.each(val4, function(key5, val5){
-                                     //alert("5th nested " + key5 + " : " + val5);
-                                      whichRowXCol = whichRowXCol + 1;
-                                      if (val5 == 'Yea')
-                                      {
-                                        $('#' + whichRowXCol).html('<td><span class="glyphicon glyphicon-ok"></span></td>');
-                                      }
-
-                                      else
-                                      {
-                                        $('#' + whichRowXCol).html('<td><span class="glyphicon glyphicon-remove"></span></td>');
-                                      }
-
-                                    });
-
-                              });
-                              checkFlag = 0;
-                            } 
-                          }
-
-
-                        });
-                      });
-
-                    });
-
-
-
-
-                   
-
-                  });
-    }
-}
-</script>
-
-
-          <div class="container" id="showthis" style= "display:none">
-              
-
-
-
-              <h4 class="leftBold">Your Comparison:</h4>
-              
-                  <table class="table table-bordered">
-                    <tr>
-                      <th id="whichLaw">Law</th>
-                      <th id="senator1"></th>
-                      <th id="senator2"></th>
-                    </tr>
-                  <tr>
-                    <td id="x1"></td>
-                      <td id="1">
-                        
-                      </td>
-                      <td id="6"></td>
-                  </tr>
-                  <tr>
-                    <td id="x2"></td>
-                      <td id="2"></td>
-                      <td id="7"></td>
-                  </tr>
-                  <tr>
-                    <td id="x3"></td>                      
-                      <td id="3"></td>
-                      <td id="8"></td>
-                  </tr>
-                  <tr>
-                    <td id="x4"></td>
-                      <td id="4"></td>
-                      <td id="9"></td>
-                  </tr>
-
-                  <tr>
-                    <td id="x5"></td>
-                      <td id="5"></td>
-                      <td id="10"></td>
-                  </tr>
-                  </table>
-              
-
-              <hr>
-              <ul class="pager">
-              <li class="previous"><a href="senateSelect">&larr; Back</a></li>
-              <li><a href="#top">&uarr; Top</a></li>
-              </ul>
-            </div>
-
-<script>
+  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-48770970-1', 'inquery5.herokuapp.com');
+  ga('create', 'UA-48537424-2', 'http://inquery.herokuapp.com');
   ga('send', 'pageview');
 
 </script>
 </body>
 </html>
-
-
