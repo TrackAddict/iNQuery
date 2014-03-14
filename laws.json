@@ -30,7 +30,7 @@
 
 		{
 			"name": "S1845",
-			"Description": "extend unemployment benefits",
+			"Description": "Extend unemployment benefits",
 			"Boxer": "Yea",
 			"Feinstein": "Yea",
 			"Dean Heller": "Yea",
@@ -74,7 +74,7 @@
 	"Education": [
 		{
 			"name": "HR1911",
-			"Description": "setting federal school loan interest rates",
+			"Description": "Setting federal school loan interest rates",
 			"Boxer": "Nay",
 			"Feinstein": "Yea",
 			"Dean Heller": "Yea",
@@ -88,7 +88,7 @@
 
 		{
 			"name": "S.Con.Res. 8",
-			"Description": "allocating federal budget to low income children",
+			"Description": "Allocating federal budget to low income children",
 			"Boxer": "Nay",
 			"Feinstein": "Nay",
 			"Dean Heller": "Yea",
@@ -102,7 +102,7 @@
 
 		{
 			"name": "S1238",
-			"Description": "motion to proceed for consideration of act",
+			"Description": "Motion to proceed for consideration of act",
 			"Boxer": "Yea",
 			"Feinstein": "Yea",
 			"Dean Heller": "Nay",
@@ -116,7 +116,7 @@
 
 		{
 			"name": "S953",
-			"Description": "extend reduce interest in stanford federal loans for reasons",
+			"Description": "Extend reduce interest in stanford federal loans for reasons",
 			"Boxer": "Yea",
 			"Feinstein": "Yea",
 			"Dean Heller": "Nay",
@@ -130,7 +130,7 @@
 
 		{
 			"name": "S1003",
-			"Description": "setting rate of interest on direct loans",
+			"Description": "Setting rate of interest on direct loans",
 			"Boxer": "Nay",
 			"Feinstein": "Nay",
 			"Dean Heller": "Yea",
@@ -146,7 +146,7 @@
 	"TaxPolicy": [
 		{
 			"name": "S743",
-			"Description": "distrubution and use of taxes",
+			"Description": "Distrubution and use of taxes",
 			"Boxer": "Yea",
 			"Feinstein": "Yea",
 			"Dean Heller": "Nay",
@@ -160,7 +160,7 @@
 
 		{
 			"name": "S388",
-			"Description": "elimnation of tax loopholes",
+			"Description": "Elimnation of tax loopholes",
 			"Boxer": "Yea",
 			"Feinstein": "Yea",
 			"Dean Heller": "Nay",
@@ -174,7 +174,7 @@
 
 		{
 			"name": "S.Con.Res. 8",
-			"Description": "motion to repeal tax increase as a result of obamacare",
+			"Description": "Motion to repeal tax increase as a result of obamacare",
 			"Boxer": "Nay",
 			"Feinstein": "Nay",
 			"Dean Heller": "Yea",
@@ -188,7 +188,7 @@
 
 		{
 			"name": "HR8",
-			"Description": "income tax adjustment",
+			"Description": "Income tax adjustment",
 			"Boxer": "Yea",
 			"Feinstein": "Yea",
 			"Dean Heller": "Yea",
@@ -202,7 +202,7 @@
 
 		{
 			"name": "HR1",
-			"Description": "appropriating tax dollars to hurricane sady relief",
+			"Description": "Appropriating tax dollars to hurricane sady relief",
 			"Boxer": "n/a",
 			"Feinstein": "Nay",
 			"Dean Heller": "Yea",

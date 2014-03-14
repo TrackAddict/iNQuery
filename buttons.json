@@ -1,21 +1,21 @@
 {
 	"buttons": [
 		{
-			"name": "Senator Comparison",
+			"name": "Compare Senators",
 			"url": "senateSelect",
 			"imageURL": "http://scienceblogs.com/gregladen/files/2012/12/US-Senate.jpg",
 			"projectNumber": "1"
 		},
 
 		{
-			"name": "See All Senators",
+			"name": "Browse Senators",
 			"url": "gallery",
 			"imageURL": "http://www.technobuffalo.com/wp-content/uploads/2013/01/06senate2-600.jpg",
 			"projectNumber": "2"
 		},
 
 		{
-			"name": "See All Laws",
+			"name": "Browse Laws",
 			"url": "lawsgallery",
 			"imageURL": "http://www.ndm-legal.com/wp-content/uploads/2012/04/01.jpg",
 			"projectNumber": "3"
